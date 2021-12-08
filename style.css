@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+
+.calculator-container {
+    width: 100%;
+    height: 100%;
+
+    background: #5e17eb;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.calculator-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+    display: grid;
+    grid-auto-flow: row;
+    place-items: center;
+
+    font-family: 'Raleway', sans-serif;
+    color: white;
+
+    text-align: center;
+}
+
+.calculator-header {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#instructions {
+    font-size: 18px;
+}
+
+#input {
+    font-size: 20px;
+    color: #5e17eb;
+    text-align: center;
+
+    width: 100%;
+    height: 30%;
+
+    border-radius: 15px;
+    border: none;
+
+    outline: none;
+
+}
+
+#button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #5e17eb;
+    border-radius: 25px;
+    border: none;
+    width: 80px;
+    height: 30px;
+}
